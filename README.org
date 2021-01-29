@@ -1,1 +1,1 @@
-* aws-saw is an emacs package to fetch logs from
+* aws-saw is an emacs package to fetch logs from AWS. Utilizes [[https://github.com/TylerBrock/saw][saw]].
