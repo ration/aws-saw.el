@@ -1,0 +1,1 @@
+* aws-saw is an emacs package to fetch logs from
