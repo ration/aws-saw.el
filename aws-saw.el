@@ -1,6 +1,6 @@
 ;;; aws-saw.el --- Helpers for retrieving logs from AWS. -*- coding: utf-8; lexical-binding: t; -*-
 
-;; Copyright © 2019, by Hindol Adhya, Tatu Lahtela
+;; Copyright © 2021 Tatu Lahtela
 
 ;; Author: Tatu Lahtela <tatu@lahtela.me>
 ;; Version: 0.0.1
@@ -16,12 +16,10 @@
 
 ;;; Commentary:
 
-;; Highlighting and indentation for Kusto https://docs.microsoft.com/en-us/azure/kusto/query/index
-
 ;;; Code:
 
 (defcustom aws-saw-command "/usr/local/bin/saw" "Path to saw")
-(defcustom aws-saw-default-get-logs "-10h")
+(defcustom aws-saw-default-get-logs "-10h" "Default amount of logs to retrieve")
 
 (defun aws-saw-command (args)
   (shell-command-to-string (format "%s %s" aws-saw-command args)))
